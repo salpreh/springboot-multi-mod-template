@@ -1,0 +1,1 @@
+docker build --build-arg PROFILE=dev -t applications/{{cookiecutter.artifact_id}} .
