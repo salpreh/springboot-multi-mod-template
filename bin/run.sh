@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BOOT_FOLDER=target
+BOOT_FOLDER=boot/target
 JAR=$1
 if [ $# -lt 1 ]; then
   JAR="$BOOT_FOLDER"/$(ls "$BOOT_FOLDER" | grep -E ".*\.jar$")
@@ -14,4 +14,3 @@ fi
 echo "Running jar $JAR"
 
 java -Dspring.profiles.active=local -jar "$JAR"
-
