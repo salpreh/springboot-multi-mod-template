@@ -1,7 +1,7 @@
 FROM openjdk:17
 
 WORKDIR /opt/app
-ADD target/app.jar /opt/app/app.jar
+ADD boot/target/app.jar /opt/app/app.jar
 
 ARG PROFILE
 USER 1000
