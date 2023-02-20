@@ -12,5 +12,17 @@
   <packaging>jar</packaging>
 
   <dependencies>
+    <dependency>
+      <groupId>com.salpreh.multimod</groupId>
+      <artifactId>domain</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.salpreh.multimod</groupId>
+      <artifactId>database</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.salpreh.multimod</groupId>
+      <artifactId>rest-api</artifactId>
+    </dependency>
   </dependencies>
 </project>
