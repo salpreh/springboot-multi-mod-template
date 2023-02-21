@@ -27,7 +27,7 @@ To run the project you can execute `bin/run.sh` script:
 ```sh
 bin/run.sh
 ```
-Or use your IDE to run the main class located in `{{cookiecutter.project_name}}/src/main/java/{{cookiecutter.__package_path}}/com.salpreh.multimod.Application.java`
+Or use your IDE to run the main class located in `{{cookiecutter.project_name}}/src/main/java/{{cookiecutter.__package_path}}/Application.java`
 
 ## Containerize the application
 There is a `Dockerfile` in the root of the project that mounts and runs the compiled application jar. You can use the script `bin/build-docker.sh` to build the docker image or issue the command manually.
