@@ -15,7 +15,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>{{cookecutter.group_id}}</groupId>
+      <groupId>{{cookiecutter.group_id}}</groupId>
       <artifactId>domain</artifactId>
     </dependency>
 

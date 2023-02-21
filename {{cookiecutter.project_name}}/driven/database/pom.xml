@@ -15,10 +15,10 @@
 
   <dependencies>
     <dependency>
-      <groupId>{{cookecutter.group_id}}</groupId>
+      <groupId>{{cookiecutter.group_id}}</groupId>
       <artifactId>domain</artifactId>
     </dependency>
- 
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
