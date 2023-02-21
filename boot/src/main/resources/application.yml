@@ -4,10 +4,10 @@ server:
     context-path: /api
 
 spring:
-  application.name: multimod
+  application.name: {{cookiecutter.artifact_id}}
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/multimod
+    url: jdbc:postgresql://localhost:5432/{{cookiecutter.artifact_id}}
     username: root
     password: password
     driver-class-name: org.postgresql.Driver
