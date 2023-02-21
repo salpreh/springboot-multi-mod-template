@@ -10,41 +10,37 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
 
-<!--  <groupId>{{cookiecutter.group_id}}</groupId>-->
-<!--  <artifactId>{{cookiecutter.artifact_id}}</artifactId>-->
-<!--  <version>{{cookiecutter.version}}</version>-->
-<!--  <name>{{cookiecutter.artifact_id}}</name>-->
-<!--  <description>{{cookiecutter.artifact_id}}</description>-->
-  <groupId>com.salpreh.multimod</groupId>
-  <artifactId>multimod</artifactId>
-  <version>0.1.0</version>
+  <groupId>{{cookiecutter.group_id}}</groupId>
+  <artifactId>{{cookiecutter.artifact_id}}</artifactId>
+  <version>{{cookiecutter.version}}</version>
+  <name>{{cookiecutter.artifact_id}}</name>
   <packaging>pom</packaging>
 
   <properties>
-    <java.version>17</java.version>
+    <java.version>{{cookiecutter.java_version}}</java.version>
     <mapstruct.version>1.4.2.Final</mapstruct.version>
-    <start-class>com.salpreh.multimod.Application</start-class>
+    <start-class>{{cookiecutter.group_id}}.Application</start-class>
   </properties>
 
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.salpreh.multimod</groupId>
+        <groupId>{{cookiecutter.group_id}}</groupId>
         <artifactId>boot</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.salpreh.multimod</groupId>
+        <groupId>{{cookiecutter.group_id}}</groupId>
         <artifactId>domain</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.salpreh.multimod</groupId>
+        <groupId>{{cookiecutter.group_id}}</groupId>
         <artifactId>rest-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.salpreh.multimod</groupId>
+        <groupId>{{cookiecutter.group_id}}</groupId>
         <artifactId>database</artifactId>
         <version>${project.version}</version>
       </dependency>

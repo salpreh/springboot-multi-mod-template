@@ -3,9 +3,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.salpreh.multimod</groupId>
-    <artifactId>multimod</artifactId>
-    <version>0.1.0</version>
+    <groupId>{{cookiecutter.group_id}}</groupId>
+    <artifactId>{{cookiecutter.artifact_id}}</artifactId>
+    <version>{{cookiecutter.version}}</version>
   </parent>
 
   <artifactId>boot</artifactId>
@@ -13,15 +13,15 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.salpreh.multimod</groupId>
+      <groupId>{{cookecutter.group_id}}</groupId>
       <artifactId>domain</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.salpreh.multimod</groupId>
+      <groupId>{{cookecutter.group_id}}</groupId>
       <artifactId>database</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.salpreh.multimod</groupId>
+      <groupId>{{cookecutter.group_id}}</groupId>
       <artifactId>rest-api</artifactId>
     </dependency>
   </dependencies>

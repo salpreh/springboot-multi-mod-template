@@ -2,17 +2,23 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
-    <groupId>com.salpreh.multimod</groupId>
-    <artifactId>multimod</artifactId>
+    <groupId>{{cookiecutter.group_id}}</groupId>
+    <artifactId>{{cookiecutter.artifact_id}}</artifactId>
     <relativePath>../../pom.xml</relativePath>
-    <version>0.1.0</version>
+    <version>{{cookiecutter.version}}</version>
   </parent>
 
   <artifactId>database</artifactId>
   <packaging>jar</packaging>
 
   <dependencies>
+    <dependency>
+      <groupId>{{cookecutter.group_id}}</groupId>
+      <artifactId>domain</artifactId>
+    </dependency>
+ 
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
